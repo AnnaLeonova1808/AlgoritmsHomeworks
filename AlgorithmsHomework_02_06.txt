@@ -1,0 +1,20 @@
+public static int countConsonantRecursion(String str, int strLength) {
+    if (strLength == 0) {
+        return 0;
+    } else {
+        char currentChar = str.charAt(str.length() - strLength);
+        int count = countConsonantRecursion(str, strLength - 1);
+        if (isConsonant(currentChar)) {
+            count++;
+        }
+        return count;
+    }
+}
+
+
+В countConsonantRecursionпstrиstrLength. Он
+
+На всехstrLengthстановится значительным 0. В этом случае
+
+В str.length() - strLength и проверю isConsonant. 
+З countConsonantRecursionс уstrLength,Н count, если используется О isConsonant,
